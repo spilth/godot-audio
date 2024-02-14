@@ -1,0 +1,21 @@
+[gd_resource type="AudioBusLayout" load_steps=4 format=3 uid="uid://bcfmk1wki2v70"]
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_hehiq"]
+resource_name = "PitchShift"
+fft_size = 4
+
+[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_pxbu2"]
+resource_name = "Chorus"
+wet = 0.0
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_44pyx"]
+resource_name = "Reverb"
+wet = 0.0
+
+[resource]
+bus/0/effect/0/effect = SubResource("AudioEffectPitchShift_hehiq")
+bus/0/effect/0/enabled = true
+bus/0/effect/1/effect = SubResource("AudioEffectChorus_pxbu2")
+bus/0/effect/1/enabled = true
+bus/0/effect/2/effect = SubResource("AudioEffectReverb_44pyx")
+bus/0/effect/2/enabled = true
